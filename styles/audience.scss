@@ -1,0 +1,102 @@
+.audience {
+  background-color: $light-blue-color;
+
+  &__header {
+    margin-top: 0;
+    padding-top: 49px;
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 700;
+    color: $color-dark;
+    text-align: center;
+    @include for-large-up {
+      padding-top: 108px;
+    }
+  }
+
+  &__name {
+    margin-top: 14px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: $color-dark;
+    text-align: center;
+    @include for-large-up {
+      margin: 24px auto 0 auto;
+      font-size: 56px;
+      line-height: 56px;
+      width: 555px;
+    }
+  }
+  &__text {
+    margin: 13px;
+    font-size: 24px;
+    line-height: 34px;
+    color: $color-dark;
+    text-align: center;
+    @include for-large-up {
+      width: 555px;
+      margin: 30px auto 30px auto;
+    }
+  }
+  &__button_gs {
+    display: block;
+    @include for-large-up {
+      display: inline-block;
+      margin-left: 38%;
+      width: 160px;
+    }
+  }
+  &__button_lm {
+    display: block;
+    background-color: $white-color;
+    color: $bright-blue-color;
+    margin-top: 12px;
+    @include for-large-up {
+      display: inline-block;
+      margin: 0 0 0 5px;
+      width: 160px;
+    }
+  }
+  &__user-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    @include for-large-up {
+      margin: 96px 10%;
+    }
+  }
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 290px;
+  height: 300px;
+  border-radius: 8px;
+  margin: 15px auto 0 auto;
+  background-color: $white-color;
+  box-shadow: 0px 1px 0px 0px #ffffff1a inset;
+  @include for-large-up {
+    width: 262px;
+  }
+  &:last-child {
+    margin-bottom: 50px;
+  }
+
+  &__image {
+    margin: 22px auto;
+  }
+  &__label {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__entertainment {
+    box-shadow: 0px 13px 18px 0px #00000026;
+    background-color: $cyan-color;
+  }
+}

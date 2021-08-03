@@ -1,0 +1,87 @@
+@mixin for-large-up {
+  @media (min-width: 400px){
+    @content;
+  }
+}
+
+.order {
+  padding: 50px 15px;
+  background-color: $color-light;
+  @include for-large-up {
+    padding: 73px 0 72px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__details {
+    max-width: 555px;
+  }
+  &__illustration {
+    max-width: 200px;
+    margin-left: 15%;
+    @include for-large-up {
+      max-width: 269px;
+      margin-right: 121px;
+      margin-left: 0;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 40px;
+    margin: 0;
+    margin-top: 18px;
+  }
+  &__form {
+    @include for-large-up {
+      display: flex;
+      margin-top: 26px;
+    }
+  }
+  &__email {
+    margin-top: 40px;
+    background: $white-color;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 13px;
+
+    @include for-large-up {
+      margin-top: 0;
+      margin-left: 10px;
+    }
+    &::placeholder {
+      color: $color-dark;
+    }
+  }
+  &__button {
+    margin-top: 12px;
+    width: 100%;
+
+    @include for-large-up {
+      margin-top: 0;
+      margin-left: 10px;
+      width: 160px;
+      flex-shrink: 0;
+    }
+  }
+  &__terms {
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-light-gray;
+  }
+
+  &__terms-link {
+    color: $text-color-blue;
+  }
+}

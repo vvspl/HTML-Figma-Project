@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  height: 64px;
+  width: 100%;
+  background-color: $white-color;
+  &__menu-button {
+    width: 58px;
+    border: none;
+    border-left: 1px solid #00000026;
+    height: 100%;
+    margin-left: auto;
+    background: transparent;
+  }
+  &__menu-icon {
+    width: 18px;
+    height: 13px;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
+    display: inline-block;
+  }
+}
+
+.top-section {
+  background-color: #f3c6bd;
+}
+
+.action__button {
+  display: none;
+}
+
+.navigation {
+  display: none;
+  &__item {
+    color: $color-dark;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    margin-right: 50px;
+  }
+  &__item:last-child {
+    margin-right: 0px;
+  }
+  &__arrow {
+    display: inline-block;
+    height: 5px;
+    width: 8px;
+    margin-left: 11px;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
+  }
+}
+.nav-list__item_selected {
+  font-weight: 700;
+}
+
+.logo {
+  display: flex;
+  &__image {
+    margin: 6px 7px 7px 12px;
+  }
+  &__name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__description {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) {
+  .page {
+    width: 1400px;
+    height: 710px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation {
+    display: block;
+    margin-left: auto;
+    margin-top: 17px;
+    margin-right: 75px;
+  }
+  .top-section {
+    background-color: #f3c6bd;
+    padding-top: 39px;
+  }
+  .header {
+    background-color: #f3c6bd;
+    width: 1140px;
+    height: 62px;
+    margin: auto;
+    display: flex;
+    &__menu-button {
+      display: none;
+    }
+  }
+
+  .action__button {
+    display: block;
+    width: 160px;
+    margin: 6px 0 0 0;
+  }
+  .logo__description {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-dark;
+    opacity: 0.6;
+  }
+}
