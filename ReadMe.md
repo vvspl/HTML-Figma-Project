@@ -3,7 +3,7 @@ HTML Layout Project.
 Figma pixel perfect layout.
 
 Uses:
-Html
+HTML5
 CSS
 SCSS
 
