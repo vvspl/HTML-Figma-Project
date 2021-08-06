@@ -79,7 +79,7 @@
   }
 }
 
-  @include for-large-up{
+@include for-large-up {
   .footer {
     margin-top: auto;
     display: flex;
@@ -163,7 +163,7 @@
   .downloads {
     display: block;
     margin-top: 25px;
-    &__hr {
+    &_hr {
       display: none;
     }
 

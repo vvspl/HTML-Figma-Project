@@ -295,7 +295,7 @@
     display: block;
     margin-top: 25px;
   }
-  .downloads__hr {
+  .downloads_hr {
     display: none;
   }
   .downloads__item:first-child {
