@@ -609,6 +609,10 @@
   box-shadow: 0px 13px 18px 0px #00000026;
   background-color: #3141C5;
 }
+.user-card__entertainment:hover {
+  cursor: pointer;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #410d0d;
+}
 
 * {
   box-sizing: border-box;

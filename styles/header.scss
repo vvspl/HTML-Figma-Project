@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 .header {
   display: flex;
   height: 64px;
@@ -72,7 +74,7 @@
   }
 }
 
-@media (min-width: 400px) {
+@include for-large-up {
   .page {
     width: 1400px;
     height: 710px;

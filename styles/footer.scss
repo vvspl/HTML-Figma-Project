@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 .footer-logo {
   display: flex;
   flex-direction: column;
@@ -77,7 +79,7 @@
   }
 }
 
-@media (min-width: 400px) {
+  @include for-large-up{
   .footer {
     margin-top: auto;
     display: flex;

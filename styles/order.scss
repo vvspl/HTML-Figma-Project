@@ -1,8 +1,4 @@
-@mixin for-large-up {
-  @media (min-width: 400px){
-    @content;
-  }
-}
+@import 'breakpoints';
 
 .order {
   padding: 50px 15px;
